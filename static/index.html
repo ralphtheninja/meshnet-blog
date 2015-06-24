@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <header>
+    <title>{{title}}</title>
+  </header>
+
+  {{#if css}}<style><!-- {{css}} --></style>{{/if}}
+
+  {{#if articles}}
+  <div id="articles">
+    <ul>
+      {{#each articles}}
+      <li><a href="/articles/{{slug}}">{{title}}</a></li>
+      {{/each}}
+    </ul>
+  </div>
+  {{/if}}
+
+  {{#if article}}
+  <div id="article">
+    {{{article.html}}}
+  </div>
+  {{/if}}
+
+</html>
