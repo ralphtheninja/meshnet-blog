@@ -1,3 +1,21 @@
 #article {
     color: gray;
+    width: 480px;
+    padding: 10px;
+    border: 1px solid;
+    position: absolute;
+    left: 50%;
+    margin-left: -240px;
+    margin-top: 30px;
+}
+
+#articles {
+    color: gray;
+    width: 400px;
+    padding: 10px;
+    border: 1px solid;
+    position: absolute;
+    left: 50%;
+    margin-left: -200px;
+    margin-top: 30px;
 }
