@@ -15,11 +15,12 @@ fs.readdirSync(articlesDir).forEach(function (file) {
   if (~file.indexOf('.md')) {
     var slug = file.split('.md')[0]
     var path = articlesDir + '/' + file
+    var stat = fs.statSync(path)
     articles[slug] = {
       slug: slug,
       title: slug.split('-').join(' '),
       path: path,
-      created_at: Date.now() // TODO read time from when file was created
+      time: stat.birthtime.getTime()
     }
   }
 })
@@ -33,8 +34,9 @@ var root = render({
   title: 'welcome to meshnet.works!',
   articles: Object.keys(articles).map(function (slug) {
     return articles[slug]
+  }).sort(function (a, b) {
+    return a.time < b.time
   })
-  // TODO add .sort() to get them in time order
 })
 
 // render all article pages
