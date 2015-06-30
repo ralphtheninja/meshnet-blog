@@ -10,7 +10,7 @@ So anyway, I realized I wanted to know more about mesh networks and how to build
 
 At the bottom they are running [`OpenWRT`](https://openwrt.org/), which is small linux distribution for embedded devices. What's also cool is that `OpenWRT` has a package manager called `opkg` and with it you can install software for your needs.
 
-Based on the information above and Wikipedia I decided to buy a router that I know works well with `OpenWRT`. I picked [`Netgear WNDR4300`](https://en.wikipedia.org/wiki/Static_routing) because of the following reasons:
+Based on the information above and Wikipedia I decided to buy a router that I know works well with `OpenWRT`. I picked [`Netgear WNDR4300`](http://www.netgear.com/home/products/networking/wifi-routers/wndr4300.aspx) because of the following reasons:
 
 * It has an Atheros MIPS processor, which means I can run `node` on it. I might want to try out `luvit` and `jxcore` as well, since they have lower memory footprint.
 * It has 128MB RAM, which is a lot of memory compared to other smaller routers. Values in the range 4MB to 16MB is not uncommon.
