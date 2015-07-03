@@ -10,17 +10,18 @@
   <div id="articles">
     <ul>
       {{#each articles}}
-      <li><a href="/articles/{{slug}}">{{title}}</a></li>
+      <li><a href="/articles/{{slug}}">{{file}}</a></li>
       {{/each}}
     </ul>
+    <a href="https://github.com/meshnet-dot-works/blog"><img id="ghlogo" src="/images/GitHub-Mark-64px.png"></a>
   </div>
   {{/if}}
 
   {{#if article}}
   <div id="article">
     <a href="/">/</a><br>
-    {{{article.html}}}<br>
-    <a href="/">/</a>
+    {{{article.html}}}
+    <a href="/">/</a><br>
   </div>
   {{/if}}
 

@@ -14,12 +14,12 @@ var css = fs.readFileSync(rootDir + '/index.css', 'utf8')
 fs.readdirSync(articlesDir).forEach(function (file) {
   if (~file.indexOf('.md')) {
     var slug = file.split('.md')[0]
-    var path = articlesDir + '/' + file
-    var stat = fs.statSync(path)
+    var fullPath = articlesDir + '/' + file
+    var stat = fs.statSync(fullPath)
     articles[slug] = {
       slug: slug,
-      title: slug.split('-').join(' '),
-      path: path,
+      file: file,
+      fullPath: fullPath,
       time: stat.birthtime.getTime()
     }
   }
@@ -45,10 +45,10 @@ Object.keys(articles).forEach(function (slug) {
   article.preRendered = render({
     title: article.title,
     article: {
-      html: marked(fs.readFileSync(article.path, 'utf8'))
+      html: marked(fs.readFileSync(article.fullPath, 'utf8'))
     }
   })
-  delete article.path
+  delete article.fullPath
 })
 
 function render(obj) {
