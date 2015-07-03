@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node server.js --port 80",
-    "dev": "DEBUG=* nodemon server.js --port 8888"
+    "dev": "DEBUG=* nodemon -e js,md,css,html server.js --port 8888"
   },
   "author": "ralphtheninja@riseup.net",
   "license": "CCBY",
