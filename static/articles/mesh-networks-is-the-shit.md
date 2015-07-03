@@ -16,7 +16,7 @@ Based on the information above and Wikipedia I decided to buy a router that I kn
 * It has 128MB RAM, which is a lot of memory compared to other smaller routers. Values in the range 4MB to 16MB is not uncommon.
 * It has 128MB flash memory. This is also a lot higher than most routers.
 * The cpu clocks in on 560MHz. There are both faster and slower routers. I didn't pick the fastest because I think memory is more important.
-* It has a usb drive. This obviously means I'll be able to connect other devices, such as usb pen drives, extra hard drives or other things, why not a camera? :)
+* USB. This obviously means I'll be able to connect other devices, such as usb pen drives, extra hard drives or other things, why not a camera? :)
 
 Tomorrow I'll have a smoking router in my hands so flashing `OpenWRT` onto the device will have high priority!
 
