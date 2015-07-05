@@ -1,7 +1,7 @@
 {
-  "name": "blog",
+  "name": "meshnet-dot-works-blog",
   "version": "0.0.0",
-  "description": "meshnet.works blog",
+  "description": "meshnet.works blog (well duh!)",
   "main": "index.js",
   "scripts": {
     "start": "node server.js --port 80",
