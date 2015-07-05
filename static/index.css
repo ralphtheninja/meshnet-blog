@@ -2,7 +2,7 @@
     color: gray;
     width: 400px;
     padding: 10px;
-    border: 1px solid;
+    border: 1px solid grey;
     position: absolute;
     left: 50%;
     margin-left: -200px;
@@ -22,11 +22,19 @@
 
 #article {
     color: gray;
-    width: 480px;
+    width: 550px;
     padding: 10px;
-    border: 1px solid;
+    border: 1px solid grey;
     position: absolute;
     left: 50%;
-    margin-left: -240px;
+    margin-left: -275px;
     margin-top: 30px;
 }
+
+#article img {
+    border: 1px solid grey;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
