@@ -1,6 +1,6 @@
 {
   "name": "meshnet-dot-works-blog",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "meshnet.works blog (well duh!)",
   "main": "index.js",
   "scripts": {
